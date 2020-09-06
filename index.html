@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCWCuJXhQRmX9WvBadZUVs9WMACzheoXXU",
+    authDomain: "btvn-3774a.firebaseapp.com",
+    databaseURL: "https://btvn-3774a.firebaseio.com",
+    projectId: "btvn-3774a",
+    storageBucket: "btvn-3774a.appspot.com",
+    messagingSenderId: "432129036565",
+    appId: "1:432129036565:web:dc4d3defcf70800551191c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+    <div class="registration-form">
+       
+        <div class="registration-form-title">
+           <h2> Registration Form</h2>
+        </div>
+        <div class="form">
+            <div class="input-info">
+                <input type="text"  placeholder="Fist name">
+            </div>
+            <div class="input-info">
+                <input type="text"  placeholder="Last name">
+            </div>
+            <div class="input-info">
+                <input type="text"  placeholder="Email">
+            </div>
+            <div class="input-info">
+                <input type="text"  placeholder="Password">
+            </div>
+            <div class="check">
+                <input type="checkbox" class="checkbox"> 
+                <p class="content">Lorem ipsum dolor sit amet </p>
+            </div>
+            <div class="check">
+                <input type="checkbox" class="checkbox">
+                <p class="content">Lorem ipsum dolor sit amet </p>
+             </div>
+			<button class="btn" onclick="addData()">REGISTER</button>   
+		</div>
+	</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
